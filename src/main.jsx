@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     element: <SignUp />,
   },
   {
-    path: "/admin-login",
+    path: "/admin",
     element: <AdminLogin />,
   },
   {
@@ -42,15 +42,15 @@ const router = createBrowserRouter([
     element: <ContactUs />,
   },
   {
-    path: "/admin-home",
+    path: "/dashboard",
     element: <AdminHome />,
   },
   {
-    path: "/admin-home/admin-management",
+    path: "/dashboard/admin-management",
     element: <AdminManagement />,
   },
   {
-    path: "/admin-home/user-management",
+    path: "/dashboard/user-management",
     element: <UserManagement />,
   },
 ]);

@@ -16,7 +16,7 @@
   display: flex;
 }
 
-.edit-button {
+.admin-edit-button {
   padding: 8px 16px;
   margin-right: 8px;
   color: #4C1A57; /* Primary color */
@@ -27,13 +27,13 @@
   background-color: transparent;
 }
 
-.edit-button:hover {
+.admin-edit-button:hover {
   background-color: #4C1A57; /* Primary color */
   color: #fff;
 }
 
 
-.delete-button {
+.admin-delete-button {
   padding: 8px 16px;
   background-color: #FF0000; /* Red color */
   color: #fff;
@@ -43,6 +43,6 @@
   transition: background-color 0.3s ease;
 }
 
-.delete-button:hover {
+.admin-delete-button:hover {
   background-color: #CC0000; /* Darker red color on hover */
 }

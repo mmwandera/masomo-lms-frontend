@@ -8,8 +8,8 @@ export default function AdminCard({ name, email }) {
         <p className="admin-email">{email}</p>
       </div>
       <div className="admin-buttons-container">
-        <button className="edit-button">Edit</button>
-        <button className="delete-button">Delete</button>
+        <button className="admin-edit-button">Edit</button>
+        <button className="admin-delete-button">Delete</button>
       </div>
     </div>
   );

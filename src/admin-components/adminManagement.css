@@ -3,8 +3,12 @@
 }
 
 .admin-form-container {
-  margin-bottom: 20px;
+  background-color: #f0f0f0; /* Gray background color */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Add some spacing between the form and the card section */
 }
+
 
 .admin-card-container {
   margin-top: 20px;

@@ -1,6 +1,7 @@
+// Card.jsx
 import './card.css';
 
-export default function Card({ title, thumbnail, price }) {
+export default function Card({ title, thumbnail, category, price }) {
   return (
     <div className="card">
       <div className="card-thumbnail">
@@ -8,7 +9,10 @@ export default function Card({ title, thumbnail, price }) {
       </div>
       <div className="card-details">
         <h3 className="card-title">{title}</h3>
-        <p className="card-price">{price}</p>
+        <div>
+          <span className="chip">{category}</span>
+        </div>
+        <p className="card-price">${price}</p>
       </div>
       <div className="card-buttons">
         <button className="edit-button">Edit</button>

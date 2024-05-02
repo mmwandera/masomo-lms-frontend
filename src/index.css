@@ -16,7 +16,7 @@ button {
 }
 
 input::placeholder {
-  font-family: 'Anek Devanagari', sans-serif !important; /* Add !important to ensure it takes precedence */
+  font-family: 'Anek Devanagari', sans-serif !important; 
   font-size: inherit;
 }
 

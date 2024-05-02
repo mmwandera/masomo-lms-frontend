@@ -1,9 +1,19 @@
+import { useEffect, useState } from 'react';
+import dummyData from './dummy-data/dashboard-data.json';
 import Card from './reusable-components/Card';
 import Footer from './reusable-components/Footer';
 import Header from './reusable-components/Header';
 import SearchBar from './reusable-components/SearchBar';
 
 export default function AdminHome() {
+  // State to hold the data
+  const [courses, setCourses] = useState([]);
+
+  // Fetch dummy data on component mount
+  useEffect(() => {
+    setCourses(dummyData);
+  }, []);
+
   return (
     <div className="admin-home">
       <Header />
@@ -14,10 +24,18 @@ export default function AdminHome() {
         </div>
         <h2 className="courses-heading">My Courses</h2>
         <div className="card-container">
-          <Card />
+          {courses.map(course => (
+            <Card
+              key={course.id}
+              title={course.title}
+              thumbnail={course.thumbnail}
+              price={course.price}
+            />
+          ))}
         </div>
       </main>
       <Footer />
     </div>
   );
 }
+

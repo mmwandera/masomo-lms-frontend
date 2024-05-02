@@ -6,10 +6,8 @@ import Header from './reusable-components/Header';
 import SearchBar from './reusable-components/SearchBar';
 
 export default function AdminHome() {
-  // State to hold the data
   const [courses, setCourses] = useState([]);
 
-  // Fetch dummy data on component mount
   useEffect(() => {
     setCourses(dummyData);
   }, []);

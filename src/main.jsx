@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import AdminHome from './admin-components/AdminHome.jsx';
 import AdminManagement from './admin-components/AdminManagement.jsx';
+import SendMessage from './admin-components/SendMessage.jsx';
 import UserManagement from './admin-components/UserManagement.jsx';
 import AdminLogin from './authentication-components/AdminLogin.jsx';
 import Login from './authentication-components/Login.jsx';
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard/user-management",
     element: <UserManagement />,
+  },
+  {
+    path: "/user-management/send-message",
+    element: <SendMessage />,
   },
 ]);
 

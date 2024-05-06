@@ -4,6 +4,7 @@ import HomeCard from './reusable-components/HomeCard';
 import HomeFooter from './reusable-components/HomeFooter';
 import HomeHeader from './reusable-components/HomeHeader';
 import HomeSearchBar from './reusable-components/HomeSearchBar';
+import "./home.css"
 
 export default function Home() {
   const [cards, setCards] = useState([]);

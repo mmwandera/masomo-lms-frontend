@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
+import logo from '../../assets/MasomoLMS-white.svg'
 
 export default function HomeHeader() {
   return (
     <header className="header">
       <div className="logo-container">
-        <img src="logo.png" alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className="logo" />
       </div>
       <nav className="nav">
         <ul className="nav-list">

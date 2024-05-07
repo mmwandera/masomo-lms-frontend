@@ -13,6 +13,7 @@ export default function Header() {
           <li><Link to="/dashboard">Dashboard</Link></li>
           <li><Link to="/dashboard/user-management">User Management</Link></li>
           <li><Link to="/dashboard/admin-management">Admin Management</Link></li>
+          <li><Link to="/dashboard/add-course">Add Course</Link></li>
           <li><Link to="/">Home</Link></li>
         </ul>
       </nav>

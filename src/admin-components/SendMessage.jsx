@@ -4,13 +4,8 @@ import Header from './reusable-components/Header';
 import './sendMessage.css';
 
 export default function SendMessage() {
-  const [recipient, setRecipient] = useState('');
   const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
-
-  const handleRecipientChange = (event) => {
-    setRecipient(event.target.value);
-  };
 
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
@@ -23,25 +18,15 @@ export default function SendMessage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Logic to send the message
-    console.log('Sending message:', { recipient, title, message });
+    console.log('Sending message:', { title, message });
   };
 
   return (
     <div className="admin-management">
       <Header />
       <main className="admin-main">
-        <h2>Send Message to {recipient}</h2>
+        <h2>Send Message to User</h2>
         <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="recipient">Recipient:</label>
-            <input
-              type="text"
-              id="recipient"
-              value={recipient}
-              onChange={handleRecipientChange}
-              required
-            />
-          </div>
           <div>
             <label htmlFor="title">Title:</label>
             <input

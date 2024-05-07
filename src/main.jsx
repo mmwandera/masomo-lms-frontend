@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import AddCourse from './admin-components/AddCourse.jsx';
 import AdminHome from './admin-components/AdminHome.jsx';
 import AdminManagement from './admin-components/AdminManagement.jsx';
 import SendMessage from './admin-components/SendMessage.jsx';
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard/user-management",
     element: <UserManagement />,
+  },
+  {
+    path: "/dashboard/add-course",
+    element: <AddCourse />,
   },
   {
     path: "/user-management/send-message",

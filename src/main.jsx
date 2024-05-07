@@ -16,6 +16,7 @@ import AboutUs from './client-side-components/AboutUs.jsx';
 import ContactUs from './client-side-components/ContactUs.jsx';
 import CourseView from './client-side-components/CourseView.jsx';
 import Home from './client-side-components/Home.jsx';
+import MyCourses from './client-side-components/MyCourses.jsx';
 import Profile from './client-side-components/Profile.jsx';
 import './index.css';
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/my-courses",
+    element: <MyCourses />,
   },
   {
     path: "/course-view",

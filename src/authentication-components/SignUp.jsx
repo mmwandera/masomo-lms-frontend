@@ -13,6 +13,10 @@ export default function SignUp() {
           <input type="email" id="email" name="email" placeholder="Enter your email address" />
         </div>
         <div className="auth-form-group">
+          <label htmlFor="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" />
+        </div>
+        <div className="auth-form-group">
           <label htmlFor="password">Enter Password</label>
           <input type="password" id="password" name="password" placeholder="Enter your password" />
         </div>

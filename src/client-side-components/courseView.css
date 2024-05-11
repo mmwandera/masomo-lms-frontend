@@ -1,0 +1,23 @@
+.course-view {
+  padding: 20px;
+}
+
+.course-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-content {
+  display: flex;
+}
+
+.course-modules {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.course-media {
+  flex: 1;
+}
+
+/* Add more styles as needed */

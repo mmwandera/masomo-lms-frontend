@@ -1,5 +1,4 @@
-import React from 'react';
-
+import './courseModule.css';
 
 export default function CourseModule({ title }) {
   return (

@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './courseView.css';
-// Import the dummy data
 import dummyData from './dummy-data/course-view-data.json';
-// Import the CourseModule component
 import CourseModule from './reusable-components/CourseModule';
-// Import the ModuleDetails component
 import ModuleDetails from './reusable-components/ModuleDetails';
 
 
@@ -28,10 +25,9 @@ export default function CourseView() {
           ))}
         </div>
         <div className="course-media">
-          <h2>Notes</h2>
           {/* Render media and notes */}
           {courseData.modules.map((module, index) => (
-            <ModuleDetails key={index} media={module.media} notes={module.notes} />
+            <ModuleDetails key={index} media={module.media} notes={module.notes} id={module.id} title={module.title} />
           ))}
         </div>
       </div>

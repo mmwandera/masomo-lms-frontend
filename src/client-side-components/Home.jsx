@@ -1,32 +1,32 @@
-import { useEffect, useState } from 'react';
-import './home.css';
-import HomeCard from './reusable-components/HomeCard';
-import HomeFooter from './reusable-components/HomeFooter';
-import HomeHeader from './reusable-components/HomeHeader';
-import HomeSearchBar from './reusable-components/HomeSearchBar';
+import { useEffect, useState } from "react"
+import "./home.css"
+import HomeCard from "./reusable-components/HomeCard"
+import HomeFooter from "./reusable-components/HomeFooter"
+import HomeHeader from "./reusable-components/HomeHeader"
+import HomeSearchBar from "./reusable-components/HomeSearchBar"
 
 export default function Home() {
-  const [courses, setCourses] = useState([]);
+  const [courses, setCourses] = useState([])
 
   useEffect(() => {
     // Fetch data from the /course route when the component mounts
-    fetchCourses();
-  }, []);
+    fetchCourses()
+  }, [])
 
   const fetchCourses = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/course'); // Replace with your actual API endpoint
-      const data = await response.json();
+      const response = await fetch("http://127.0.0.1:5000/course") // Replace with your actual API endpoint
+      const data = await response.json()
       if (response.ok) {
         // Update the state with the fetched courses
-        setCourses(data.courses);
+        setCourses(data.courses)
       } else {
-        console.error('Failed to fetch courses:', data.error || 'Unknown error');
+        console.error("Failed to fetch courses:", data.error || "Unknown error")
       }
     } catch (error) {
-      console.error('Error fetching courses:', error);
+      console.error("Error fetching courses:", error)
     }
-  };
+  }
 
   return (
     <div className="home">
@@ -53,5 +53,5 @@ export default function Home() {
       </main>
       <HomeFooter />
     </div>
-  );
+  )
 }

@@ -28,20 +28,81 @@ export default function AddCourse() {
 
           {/* Modules Section */}
           <h2 className="module-heading">Modules</h2>
-          {/* Repeat the following section 10 times */}
-          {[...Array(10)].map((_, index) => (
-            <div key={index} className="module-form">
-              <h3>Module {index + 1}</h3>
+            <div className="module-form">
+              <h3>Module</h3>
               <div className="form-group">
-                <label htmlFor={`moduleTitle${index}`}>Module Title:</label>
-                <input type="text" id={`moduleTitle${index}`} name={`moduleTitle${index}`} />
+                <label htmlFor="moduleTitle">Module Title:</label>
+                <input type="text" id="moduleTitle" name="moduleTitle" />
               </div>
               <div className="form-group">
-                <label htmlFor={`moduleNotes${index}`}>Module Notes:</label>
-                <textarea id={`moduleNotes${index}`} name={`moduleNotes${index}`}></textarea>
+                <label htmlFor="moduleThumbnail" >Module Thumbnail:</label>
+                <input type="text" id="moduleThumbnail" name="moduleThumbnail" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="moduleNotes" >Module Notes:</label>
+                <textarea id="moduleNotes" name="moduleNotes" ></textarea>
               </div>
             </div>
-          ))}
+            <div className="module-form">
+              <h3>Module</h3>
+              <div className="form-group">
+                <label htmlFor="moduleTitle">Module Title:</label>
+                <input type="text" id="moduleTitle" name="moduleTitle" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="moduleThumbnail" >Module Thumbnail:</label>
+                <input type="text" id="moduleThumbnail" name="moduleThumbnail" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="moduleNotes" >Module Notes:</label>
+                <textarea id="moduleNotes" name="moduleNotes" ></textarea>
+              </div>
+            </div>
+            <div className="module-form">
+              <h3>Module</h3>
+              <div className="form-group">
+                <label htmlFor="moduleTitle">Module Title:</label>
+                <input type="text" id="moduleTitle" name="moduleTitle" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="moduleThumbnail" >Module Thumbnail:</label>
+                <input type="text" id="moduleThumbnail" name="moduleThumbnail" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="moduleNotes" >Module Notes:</label>
+                <textarea id="moduleNotes" name="moduleNotes" ></textarea>
+              </div>
+            </div>
+            <div className="module-form">
+              <h3>Module</h3>
+              <div className="form-group">
+                <label htmlFor="moduleTitle">Module Title:</label>
+                <input type="text" id="moduleTitle" name="moduleTitle" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="moduleThumbnail" >Module Thumbnail:</label>
+                <input type="text" id="moduleThumbnail" name="moduleThumbnail" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="moduleNotes" >Module Notes:</label>
+                <textarea id="moduleNotes" name="moduleNotes" ></textarea>
+              </div>
+            </div>
+            <div className="module-form">
+              <h3>Module</h3>
+              <div className="form-group">
+                <label htmlFor="moduleTitle">Module Title:</label>
+                <input type="text" id="moduleTitle" name="moduleTitle" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="moduleThumbnail" >Module Thumbnail:</label>
+                <input type="text" id="moduleThumbnail" name="moduleThumbnail" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="moduleNotes" >Module Notes:</label>
+                <textarea id="moduleNotes" name="moduleNotes" ></textarea>
+              </div>
+            </div>
 
           <button type="submit" className="submit-button">Submit</button>
         </form>

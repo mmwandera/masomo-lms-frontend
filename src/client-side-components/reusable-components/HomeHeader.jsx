@@ -1,7 +1,17 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/MasomoLMS-white.svg';
 
 export default function HomeHeader() {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // Remove token from local storage
+    localStorage.removeItem('token');
+    localStorage.removeItem('user_id');
+    // Redirect user to login page
+    navigate('/login');
+  };
+
   return (
     <header className="header">
       <div className="logo-container">
@@ -18,7 +28,7 @@ export default function HomeHeader() {
         </ul>
       </nav>
       <div className="logout-container">
-        <Link to="/login" className="logout-button">Logout</Link>
+        <button onClick={handleLogout} className="logout-button">Logout</button>
       </div>
     </header>
   );

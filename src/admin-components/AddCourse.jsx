@@ -15,7 +15,7 @@ export default function AddCourse() {
           </div>
           <div className="form-group">
             <label htmlFor="courseThumbnail">Course Thumbnail:</label>
-            <input type="file" id="courseThumbnail" name="courseThumbnail" />
+            <input type="text" id="courseThumbnail" name="courseThumbnail" />
           </div>
           <div className="form-group">
             <label htmlFor="courseDescription">Course Description:</label>
@@ -35,10 +35,6 @@ export default function AddCourse() {
               <div className="form-group">
                 <label htmlFor={`moduleTitle${index}`}>Module Title:</label>
                 <input type="text" id={`moduleTitle${index}`} name={`moduleTitle${index}`} />
-              </div>
-              <div className="form-group">
-                <label htmlFor={`moduleMedia${index}`}>Module Media:</label>
-                <input type="file" id={`moduleMedia${index}`} name={`moduleMedia${index}`} />
               </div>
               <div className="form-group">
                 <label htmlFor={`moduleNotes${index}`}>Module Notes:</label>

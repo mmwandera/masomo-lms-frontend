@@ -41,6 +41,7 @@ export default function Home() {
           {courses.map((course, index) => (
             <HomeCard
               key={index}
+              id={course.id} // Pass the course ID to each HomeCard
               thumbnail={course.thumbnail}
               description={course.description}
               title={course.title}
